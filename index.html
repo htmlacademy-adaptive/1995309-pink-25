@@ -3,46 +3,89 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Мобильное приложение "Pink"</title>
+    <title>Мобильное приложение Pink</title>
   </head>
 
   <body class="page__body">
 
-    <header class="main-header">
+    <header class="page-header">
 
-      <a class="main-header__logo" href="#">
-        <img class="main-header__logo-image" src="images/logo-header-mobile.svg" alt="Логотип мобильного приложения Пинк.">
-      </a>
+      <div class="page-header__nav-wrapper">
 
-      <nav class="main-nav">
+        <a class="page-header__logo" href="#">
+          <img class="page-header__logo-image" src="images/logo-header-mobile.svg" alt="Логотип мобильного приложения Pink.">
+        </a>
 
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <nav class="page-header__main-nav main-nav">
 
-        <div class="main-nav__wrapper">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
-          <ul class="main-nav__list site-list">
+          <div class="main-nav__wrapper">
 
-            <li class="site-list__item site-list__item--current">
-              <a>главная</a>
+            <ul class="main-nav__list site-list">
+
+              <li class="site-list__item site-list__item--current">
+                <a>главная</a>
+              </li>
+
+              <li class="site-list__item">
+                <a href="#">Фотографии</a>
+              </li>
+
+              <li class="site-list__item">
+                <a href="#">конкурс</a>
+              </li>
+
+              <li class="site-list__item">
+                <a href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </nav>
+
+      </div>
+
+      <h1 class="visually-hidden">Мобильное приложение Pink рскрасит серые будни</h1>
+
+      <div class="page-header__apps-wrapper">
+
+        <div class="page-header__apps apps">
+
+          <p class="apps__title">Взгляните на жизнь
+            иначе!</p>
+
+          <a class="apps__button" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
+
+          <ul class="apps__list">
+
+            <li class="apps__item">
+              <a class="apps__link" href="https://www.apple.com/ru/app-store/"><span class="visually-hidden">iOS</span></a>
             </li>
 
-            <li class="site-list__item">
-              <a href="#">Фотографии</a>
+            <li class="apps__item">
+              <a class="apps__link" href="https://play.google.com/store"><span class="visually-hidden">Android</span></a>
             </li>
 
-            <li class="site-list__item">
-              <a href="#">конкурс</a>
-            </li>
-
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
+            <li class="apps__item">
+              <a class="apps__link" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone"><span class="visually-hidden">Windows</span></a>
             </li>
 
           </ul>
+
+          <p class="apps__deskription">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+
         </div>
-      </nav>
+
+      </div>
 
     </header>
+
+    <main class="main-container">
+
+    </main>
 
   </body>
 
