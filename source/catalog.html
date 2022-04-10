@@ -233,3 +233,74 @@
           </ul>
 
         </section>
+
+        <div class="catalog__motive-wrapper content-wrapper">
+          <p class="catalog__motive">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        </div>
+
+        <section class="photo-editor">
+
+          <h2 class="visually-hidden">Фоторедактор для загруженных изображений</h2>
+
+					<div class="photo-editor__form-wrapper content-wrapper">
+
+						<form class="photo-editor__form form-photo" action="https://echo.htmlacademy.ru/" enctype="multipart/form-data" method="post">
+
+              <input class="form-photo__input visually-hidden" type="file" id="image" name="image" accept="image/jpeg, image/png, image/gif">
+
+              <img src="img/gallery/photo-editor-mobile.jpg" alt="Для редактирования.">
+
+              <div class="form-photo__editor editor">
+
+                <div class="editor__buttons-wrapper">
+
+                  <button class="editor__button editor__button--active">
+                    <span class="visually-hidden">Обрезать фотографию</span>
+                    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M32 28h4V12a4 4 0 0 0-4-4H16v4h16v16Zm-20 4V0H8v8H0v4h8v20a4 4 0 0 0 4 4h20v8h4v-8h8v-4H12Z" fill="#D22856"/>
+                    </svg>
+                  </button>
+
+                  <button class="editor__button editor__button--inactive">
+                    <span class="visually-hidden">Выполнить заливку</span>
+                    <svg width="48" height="43" viewBox="0 0 48 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g opacity=".3" fill="#283645">
+                        <path d="M33.1 17.9 15.2 0l-2.8 2.8 4.8 4.8L6.9 17.9a3 3 0 0 0 0 4.2l11 11a3 3 0 0 0 4.2 0l11-11a3 3 0 0 0 0-4.2ZM10.4 20l9.6-9.6 9.6 9.6H10.4ZM38 23s-4 4.3-4 7a4 4 0 1 0 8 0c0-2.7-4-7-4-7ZM48 40H0v3h48v-3Z"/>
+                      </g>
+                    </svg>
+                  </button>
+
+                  <button class="editor__button editor__button--inactive">
+                    <span class="visually-hidden">Настроить контраст</span>
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g opacity=".3" fill="#283645">
+                        <path d="M16 4a12 12 0 1 1 0 24 12 12 0 0 1 0-24Zm0-4a16 16 0 1 0 0 32 16 16 0 0 0 0-32Z"/>
+                        <path d="M16 24.3a8.5 8.5 0 0 0 0-17"/>
+                      </g>
+                    </svg>
+                  </button>
+
+                </div>
+
+                <div class="editor__range-wrapper">
+                  <input class="editor__range visually-hidden" type="range" min="0" max="10" value="8">
+                </div>
+
+              </div>
+
+						  <div class="form-photo__buttons">
+
+                <button class="form-photo__button button" type="submit">Запостить</button>
+							  <button class="form-photo__button button" type="reset">Отмена</button>
+
+              </div>
+
+						</form>
+
+					</div>
+
+				</section>
+
+      </div>
+
+    </main>
