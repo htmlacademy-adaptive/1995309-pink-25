@@ -65,7 +65,7 @@
 
           <h2 class="visually-hidden">Галерея фото пользователей</h2>
 
-          <div class="gallery__item photo--win">
+          <div class="gallery__item photo photo--win">
 
             <a class="photo__link photo__link--win" href="#">
               <img class="photo__image" src="img/gallery/panorama-mobile.jpg" alt="Фотография дня.">
@@ -75,7 +75,7 @@
               <p class="photo__author">
                 <b class="photo__author-name">Анна</b><time class="photo__date" datetime="2022-04-08T23:00">(5 минут назад)</time>
               </p>
-              <p class="photo__text photo__text--win">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <p class="photo__text photo__text--win">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе,задавайте свои вопросы!</p>
 
               <div class="photo__likes photo__likes--win">
                 <button class="photo__like-button" type="button">
@@ -240,29 +240,27 @@
         </div>
 
         <section class="photo-editor">
-
           <h2 class="visually-hidden">Фоторедактор для загруженных изображений</h2>
 
-					<div class="photo-editor__form-wrapper content-wrapper">
+          <div class="photo-editor__form-wrapper content-wrapper">
 
-						<form class="photo-editor__form form-photo" action="https://echo.htmlacademy.ru/" enctype="multipart/form-data" method="post">
+            <form class="photo-editor__form form-photo" action="https://echo.htmlacademy.ru/" enctype="multipart/form-data" method="post">
 
               <input class="form-photo__input visually-hidden" type="file" id="image" name="image" accept="image/jpeg, image/png, image/gif">
-
               <img src="img/gallery/photo-editor-mobile.jpg" alt="Для редактирования.">
 
               <div class="form-photo__editor editor">
 
                 <div class="editor__buttons-wrapper">
 
-                  <button class="editor__button editor__button--active">
+                  <button class="editor__button editor__button--active" type="button">
                     <span class="visually-hidden">Обрезать фотографию</span>
                     <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M32 28h4V12a4 4 0 0 0-4-4H16v4h16v16Zm-20 4V0H8v8H0v4h8v20a4 4 0 0 0 4 4h20v8h4v-8h8v-4H12Z" fill="#D22856"/>
                     </svg>
                   </button>
 
-                  <button class="editor__button editor__button--inactive">
+                  <button class="editor__button editor__button--inactive" type="button">
                     <span class="visually-hidden">Выполнить заливку</span>
                     <svg width="48" height="43" viewBox="0 0 48 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g opacity=".3" fill="#283645">
@@ -271,7 +269,7 @@
                     </svg>
                   </button>
 
-                  <button class="editor__button editor__button--inactive">
+                  <button class="editor__button editor__button--inactive" type="button">
                     <span class="visually-hidden">Настроить контраст</span>
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g opacity=".3" fill="#283645">
@@ -289,18 +287,16 @@
 
               </div>
 
-						  <div class="form-photo__buttons">
-
+              <div class="form-photo__buttons">
                 <button class="form-photo__button button" type="submit">Запостить</button>
-							  <button class="form-photo__button button" type="reset">Отмена</button>
-
+                <button class="form-photo__button button" type="reset">Отмена</button>
               </div>
 
-						</form>
+            </form>
 
-					</div>
+          </div>
 
-				</section>
+        </section>
 
       </div>
 
