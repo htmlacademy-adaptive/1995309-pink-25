@@ -1,0 +1,13 @@
+.logo-link .logo-link__logo {
+  fill: #ffffff;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
+
+}
