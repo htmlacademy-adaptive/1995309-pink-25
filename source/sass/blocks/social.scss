@@ -1,0 +1,35 @@
+.social {
+  width: 180px;
+}
+
+.social__list {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.social__item {
+  display: flex;
+  position: relative;
+}
+
+.social__icon {
+  position: absolute;
+}
+
+.social__icon--vk {
+  top: 18px;
+  left: 18px;
+}
+
+.social__icon--telegram {
+  top: 17px;
+  left: 16px;
+}
+
+.social__icon--youtube {
+  top: 20px;
+  left: 20px;
+}

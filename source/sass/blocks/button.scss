@@ -1,0 +1,17 @@
+.button {
+  box-sizing: border-box;
+  height: 55px;
+  border-width: 3px;
+  border-radius: 29px;
+  border-style: solid;
+}
+
+.button--download {
+  border-color: #ffffff;
+}
+
+.button--social {
+  width: 54px;
+  height: 54px;
+  border-color: rgba(40, 54, 69, 0.1);
+}
