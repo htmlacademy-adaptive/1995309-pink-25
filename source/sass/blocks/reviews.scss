@@ -1,0 +1,53 @@
+.reviews {
+  color: #283645;
+}
+
+.reviews__wrapper--mobile {
+  padding: 20px;
+}
+
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.reviews__item--mobile {
+  padding-top: 26px;
+}
+
+.reviews__item--no-display {
+  display: none;
+}
+
+.reviews__text {
+  margin: 0;
+  text-align: center;
+}
+
+.reviews__author-name {
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  color: #000000;
+}
+
+.reviews__author-name--mobile {
+  font-size: 18px;
+  text-align: 30px;
+  order: -1;
+  padding-bottom: 20px;
+}
+
+.reviews__text {
+  font-weight: 400;
+}
+
+.reviews__text--mobile {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.reviews__author-info--mobile {
+  display: none;
+}
