@@ -2,22 +2,22 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-}
 
-.benefits-intro--mobile {
-  justify-content: space-between;
-  padding-top: 26px;
-  padding-bottom: 15px;
-  min-height: 196px;
+  &--mobile {
+    justify-content: space-between;
+    padding-top: 26px;
+    padding-bottom: 15px;
+    min-height: 196px;
+  }
 }
 
 .benefits-intro__text {
   font-weight: 300;
   margin: 0;
   text-align: center;
-}
 
-.benefits-intro__text--mobile {
-  font-size: 24px;
-  line-height: 29px;
+  &--mobile {
+    font-size: 24px;
+    line-height: 29px;
+  }
 }

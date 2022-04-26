@@ -4,22 +4,22 @@
   background-image: url("../../img/index/benefits-screen-smile.png"), url("../../img/index/benefits-phone.png"), url("../../img/index/benefits-background.svg");
   background-repeat: no-repeat;
   background-position: center 762px, center 725px, center bottom;
-}
 
-.benefits--mobile {
-  padding: 20px;
+  &--mobile {
+    padding: 20px;
+  }
 }
 
 .benefits__wrapper {
   display: flex;
   box-sizing: border-box;
-}
 
-.benefits__wrapper--mobile {
-  flex-direction: column;
-  box-sizing: border-box;
-  min-height: 786px - 20px;
-  padding-top: 85px;
+  &--mobile {
+    flex-direction: column;
+    box-sizing: border-box;
+    min-height: 786px - 20px;
+    padding-top: 85px;
+  }
 }
 
 .benefits__list {
@@ -28,8 +28,10 @@
   padding: 0;
 }
 
-.benefits__item--mobile {
-  padding-bottom: 30px;
+.benefits__item {
+  &--mobile {
+    padding-bottom: 30px;
+  }
 }
 
 .benefits__title {
@@ -37,21 +39,21 @@
   font-weight: 700;
   text-align: center;
   color: #000000;
-}
 
-.benefits__title--mobile {
-  font-size: 18px;
-  line-height: 24px;
-  padding-bottom: 14px;
+  &--mobile {
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 14px;
+  }
 }
 
 .benefits__description {
   font-weight: 400;
   margin: 0;
   text-align: center;
-}
 
-.benefits__description--mobile {
-  font-size: 14px;
-  line-height: 24px;
+  &--mobile {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }

@@ -1,7 +1,7 @@
 .nav-wrapper {
   background-color: rgba(0, 0, 0, 0.3);
-}
 
-.nav-wrapper--mobile {
-  padding: 21px 20px 21px 20px;
+  &--mobile {
+    padding: 21px 20px 21px 20px;
+  }
 }

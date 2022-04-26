@@ -4,24 +4,28 @@
   font-weight: 400;
   padding: 0;
   color: #283645;
-}
 
-.body-cell--mobile {
-  padding-left: 20px;
-  font-size: 14px;
-  line-height: 30px;
+  &--mobile {
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 30px;
+  }
 }
 
 .body-cell__value {
   position: absolute;
 }
 
-.body-cell__value-true--mobile {
-  top: 21px;
-  right: 19px;
+.body-cell__value-true {
+  &--mobile {
+    top: 21px;
+    right: 19px;
+  }
 }
 
-.body-cell__value-false--mobile {
-  top: 16px;
-  right: 21px;
+.body-cell__value-false {
+  &--mobile {
+    top: 16px;
+    right: 21px;
+  }
 }

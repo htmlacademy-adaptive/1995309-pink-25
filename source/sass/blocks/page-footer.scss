@@ -6,13 +6,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
 
-.page-footer__content-wrapper--mobile {
-  box-sizing: border-box;
-  flex-direction: column;
-  padding: 40px 70px 40px 70px;
-  min-height: 284px;
+  &--mobile {
+    box-sizing: border-box;
+    flex-direction: column;
+    padding: 40px 70px 40px 70px;
+    min-height: 284px;
+  }
 }
 
 .page-footer__logo {
@@ -31,11 +31,11 @@
 
 .page-footer__copyright {
   display: flex;
-}
 
-.page-footer__copyright--mobile {
-  justify-content: space-between;
-  align-items: center;
+  &--mobile {
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .page-footer__copyright-link {
@@ -68,12 +68,12 @@
   text-decoration: none;
   color: #283645;
   }
-}
 
-.page-footer__copyright-link--mobile {
-  width: 130px;
-  font-size: 14px;
-  line-height: 18px;
+  &--mobile {
+    width: 130px;
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 .page-footer__academy-logo {

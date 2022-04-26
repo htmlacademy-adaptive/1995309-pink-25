@@ -4,26 +4,26 @@
   border-width: 3px;
   border-radius: 29px;
   border-style: solid;
-}
 
-.button--download {
-  border-color: #ffffff;
-}
-
-.button--social {
-  width: 54px;
-  height: 54px;
-  border-color: rgba(40, 54, 69, 0.1);
-
-  &:hover {
-    border-color: #283645;
+  &--download {
+    border-color: #ffffff;
   }
 
-  &:active {
+  &--social {
+    width: 54px;
+    height: 54px;
     border-color: rgba(40, 54, 69, 0.1);
-  }
 
-  &:active .social__icon {
-    opacity: 0.3;
+    &:hover {
+      border-color: #283645;
+    }
+
+    &:active {
+      border-color: rgba(40, 54, 69, 0.1);
+    }
+
+    &:active .social__icon {
+      opacity: 0.3;
+    }
   }
 }

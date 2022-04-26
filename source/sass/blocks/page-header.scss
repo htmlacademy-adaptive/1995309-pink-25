@@ -2,29 +2,29 @@
   position: relative;
   background-color: #1d2631;
   color: #ffffff;
-}
 
-.page-header--mobile {
-  min-height: 171px + 66px;
-  background-image: url("../../img/header/background-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: top;
-}
+  &--mobile {
+    min-height: 171px + 66px;
+    background-image: url("../../img/header/background-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
 
-.page-header--mobile-index {
-  min-height: 733px;
-  background-image: url("../../img/header/phone-hand.png"), url("../../img/header/phone-screen.jpg"), url("../../img/header/background-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: left 176px, center 209px, top;
+  &--mobile-index {
+    min-height: 733px;
+    background-image: url("../../img/header/phone-hand.png"), url("../../img/header/phone-screen.jpg"), url("../../img/header/background-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: left 176px, center 209px, top;
+  }
 }
 
 .page-header__title-wrapper {
   display: flex;
-}
 
-.page-header__title-wrapper--mobile {
-  justify-content: center;
-  padding: 20px;
+  &--mobile {
+    justify-content: center;
+    padding: 20px;
+  }
 }
 
 .page-header__title {
@@ -32,17 +32,17 @@
   padding: 0;
   font-weight: 300;
   text-align: center;
-}
 
-.page-header__title--mobile {
-  font-size: 24px;
-  line-height: 33px;
-  padding-top: 16px;
-}
+  &--mobile {
+    font-size: 24px;
+    line-height: 33px;
+    padding-top: 16px;
+  }
 
-.page-header__title--mobile-index {
-  line-height: 29px;
-  padding-top: 9px;
+  &--mobile-index {
+    line-height: 29px;
+    padding-top: 9px;
+  }
 }
 
 .page-header__apps {
