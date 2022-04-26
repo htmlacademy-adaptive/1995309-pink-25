@@ -15,6 +15,20 @@
   min-height: 284px;
 }
 
+.page-footer__logo {
+  &:hover .page-footer__icon-logo .page-footer__icon-path {
+    fill: #d22856;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active .page-footer__icon-logo .page-footer__icon-path {
+    fill: #283645;
+  }
+}
+
 .page-footer__copyright {
   display: flex;
 }
@@ -29,4 +43,18 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+}
+
+.page-footer__copyright-link {
+  &:hover .page-footer__academy-logo {
+    fill: #283645;
+  }
+
+  &:active .page-footer__academy-logo {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__academy-logo {
+  fill: #d22856;
 }
