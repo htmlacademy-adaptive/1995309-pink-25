@@ -34,25 +34,46 @@
 }
 
 .page-footer__copyright--mobile {
-  width: 130px;
   justify-content: space-between;
   align-items: center;
 }
 
-.page-footer__copyright-text {
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-}
-
 .page-footer__copyright-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 400;
+  color: #283645;
+
+  &:hover {
+    text-decoration: none;
+    color: #283645;
+  }
+
   &:hover .page-footer__academy-logo {
     fill: #283645;
+  }
+
+  &:active {
+    text-decoration: none;
+    color: #283645;
   }
 
   &:active .page-footer__academy-logo {
     opacity: 0.3;
   }
+
+  &:visited {
+  text-decoration: none;
+  color: #283645;
+  }
+}
+
+.page-footer__copyright-link--mobile {
+  width: 130px;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .page-footer__academy-logo {
