@@ -1,0 +1,33 @@
+.user-contacts__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  &--mobile {
+    flex-direction: column;
+  }
+}
+
+.user-contacts__item {
+  display: flex;
+
+  &--mobile {
+    flex-direction: column;
+    padding-bottom: 19px;
+  }
+}
+
+.user-contacts__input {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  height: 59px;
+
+  &::-webkit-input-placeholder {
+    color: #283645;
+  }
+
+  &::-moz-placeholder {
+    color: #283645;
+  }
+}

@@ -1,0 +1,8 @@
+.submit-wrapper {
+  display: flex;
+
+  &--mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+}

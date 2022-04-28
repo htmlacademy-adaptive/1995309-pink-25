@@ -1,0 +1,27 @@
+.story__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.story__label {
+  padding-bottom: 20px;
+}
+
+.story__input {
+  padding-top: 14px;
+  resize: none;
+
+  &::-webkit-input-placeholder {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
+  }
+
+  &::-moz-placeholder {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
+  }
+}
