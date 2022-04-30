@@ -1,0 +1,67 @@
+.contacts {
+  color: #283645;
+}
+
+.contacts__wrapper {
+  &--mobile {
+    padding: 20px;
+  }
+}
+
+.contacts__title {
+  margin: 0;
+  font-weight: 300;
+  text-align: center;
+
+  &--mobile {
+    font-size: 24px;
+    line-height: 29px;
+    padding-top: 27px;
+    padding-bottom: 18px;
+  }
+}
+
+.contacts__list {
+  margin: 0;
+}
+
+.contacts__item-term {
+  font-weight: 700;
+  text-align: center;
+
+  &--mobile {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+.contacts__item-description {
+  margin: 0;
+  text-align: center;
+
+  &--mobile {
+    padding-bottom: 19px;
+  }
+}
+
+.contacts__item-link {
+  color: #d22856;
+  font-weight: 300;
+  text-decoration: none;
+
+  &--mobile {
+    font-size: 24px;
+    line-height: 33px;
+  }
+}
+
+.contacts__item-address {
+  color: #d22856;
+  font-style: normal;
+  font-weight: 300;
+
+  &--mobile {
+    font-size: 24px;
+    line-height: 33px;
+  }
+}

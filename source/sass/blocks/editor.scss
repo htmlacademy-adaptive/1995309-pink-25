@@ -1,0 +1,12 @@
+.editor__buttons-wrapper {
+  display: flex;
+
+  &--mobile {
+    justify-content: space-between;
+  }
+}
+
+.editor__button {
+  border: none;
+  background-color: transparent;
+}

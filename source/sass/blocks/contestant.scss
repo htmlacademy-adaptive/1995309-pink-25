@@ -1,0 +1,38 @@
+.contestant {
+  border: none;
+  margin: 0;
+}
+
+.contestant__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  &--mobile {
+    flex-direction: column;
+  }
+}
+
+.contestant__item {
+  display: flex;
+
+  &--mobile {
+    flex-direction: column;
+    padding-bottom: 19px;
+  }
+}
+
+.contestant__input {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  height: 59px;
+
+  &::-webkit-input-placeholder {
+    color: #283645;
+  }
+
+  &::-moz-placeholder {
+    color: #283645;
+  }
+}

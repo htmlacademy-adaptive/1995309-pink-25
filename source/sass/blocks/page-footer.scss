@@ -1,0 +1,81 @@
+.page-footer {
+  color: #283645;
+}
+
+.page-footer__content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &--mobile {
+    box-sizing: border-box;
+    flex-direction: column;
+    padding: 40px 70px 40px 70px;
+    min-height: 284px;
+  }
+}
+
+.page-footer__logo {
+  &:hover .page-footer__icon-logo .page-footer__icon-path {
+    fill: #d22856;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active .page-footer__icon-logo .page-footer__icon-path {
+    fill: #283645;
+  }
+}
+
+.page-footer__copyright {
+  display: flex;
+
+  &--mobile {
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.page-footer__copyright-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 400;
+  color: #283645;
+
+  &:hover {
+    text-decoration: none;
+    color: #283645;
+  }
+
+  &:hover .page-footer__academy-logo {
+    fill: #283645;
+  }
+
+  &:active {
+    text-decoration: none;
+    color: #283645;
+  }
+
+  &:active .page-footer__academy-logo {
+    opacity: 0.3;
+  }
+
+  &:visited {
+    text-decoration: none;
+    color: #283645;
+  }
+
+  &--mobile {
+    width: 130px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.page-footer__academy-logo {
+  fill: #d22856;
+}

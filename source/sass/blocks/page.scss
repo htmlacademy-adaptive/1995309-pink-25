@@ -1,0 +1,15 @@
+.page {
+  background-color: #e5e5e5;
+}
+
+.page__body {
+  position: relative;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  background-color: #ffffff;
+
+  &--mobile {
+    width: 320px;
+    margin: 0 auto;
+  }
+}

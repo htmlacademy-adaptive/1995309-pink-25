@@ -1,0 +1,28 @@
+.rates {
+  box-sizing: border-box;
+  background-image: url("../../img/index/rates-background.svg");
+  background-repeat: no-repeat;
+
+  &--mobile {
+    min-height: 479px;
+    overflow: hidden;
+  }
+}
+
+.rates__wrapper {
+  position: relative;
+
+  &--mobile {
+    height: 279px + 127px;
+  }
+}
+
+.rates__table-wrapper {
+  position: absolute;
+  padding-top: 127px;
+  left: -256px;
+
+  &--mobile {
+    width: 276px * 3 + 4px;
+  }
+}
