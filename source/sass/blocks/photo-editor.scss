@@ -1,0 +1,12 @@
+.photo-editor {
+  background-color: #f2f2f2;
+}
+
+.photo-editor__form-wrapper {
+  display: flex;
+
+  &--mobile {
+    flex-direction: column;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,24 @@
+.catalog {
+  color: #283645;
+}
+
+.catalog__intro-wrapper {
+  &--mobile {
+    padding-bottom: 52px;
+  }
+}
+
+.catalog__intro {
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+
+  &--mobile {
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
+
+.catalog__motive-wrapper {
+  padding-bottom: 44px;
+}

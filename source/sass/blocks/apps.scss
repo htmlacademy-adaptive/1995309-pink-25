@@ -20,7 +20,9 @@
 }
 
 .apps__button {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .apps__list {
