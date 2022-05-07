@@ -1,21 +1,14 @@
 .form-photo__editor {
-  &--mobile {
-    padding: 20px;
-  }
+  padding: 20px;
 }
 
 .form-photo__button-wrapper {
   display: flex;
-
-  &--mobile {
-    flex-direction: column;
-    justify-content: space-between;
-    height: 122px;
-  }
+  flex-direction: column;
+  justify-content: space-between;
+  height: 122px;
 }
 
 .form-photo__button {
-  &--mobile {
-    width: 100%;
-  }
+  width: 100%;
 }

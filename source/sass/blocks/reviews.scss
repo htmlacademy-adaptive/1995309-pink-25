@@ -1,21 +1,12 @@
-.reviews {
-  color: #283645;
-}
-
 .reviews__wrapper {
-  &--mobile {
-    padding: 20px;
-  }
+  padding: 20px;
 }
 
 .reviews__item {
   display: flex;
   flex-direction: column;
   margin: 0;
-
-  &--mobile {
-    padding-top: 26px;
-  }
+  padding-top: 26px;
 
   &--no-display {
     display: none;
@@ -25,12 +16,7 @@
 .reviews__text {
   margin: 0;
   text-align: center;
-  font-weight: 400;
-
-  &--mobile {
-    font-size: 14px;
-    line-height: 30px;
-  }
+  line-height: 30px;
 }
 
 .reviews__author-name {
@@ -38,17 +24,12 @@
   font-style: normal;
   text-align: center;
   color: #000000;
-
-  &--mobile {
-    font-size: 18px;
-    text-align: 30px;
-    order: -1;
-    padding-bottom: 20px;
-  }
+  font-size: 18px;
+  line-height: 30px;
+  order: -1;
+  padding-bottom: 20px;
 }
 
 .reviews__author-info {
-  &--mobile {
-    display: none;
-  }
+  display: none;
 }

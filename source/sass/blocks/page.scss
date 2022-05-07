@@ -1,15 +1,56 @@
 .page {
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $darkgrey;
   background-color: #e5e5e5;
 }
 
 .page__body {
   position: relative;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
   background-color: #ffffff;
+  width: 320px;
+  margin: 0 auto;
+}
 
-  &--mobile {
-    width: 320px;
-    margin: 0 auto;
+.page__header {
+  position: relative;
+  min-height: 171px + 66px;
+
+  &--index {
+    min-height: 733px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page__body {
+    width: 660px;
+  }
+
+  .page__header {
+    position: relative;
+    min-height: 110px + 330px;
+
+    &--index {
+      min-height: 733px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__body {
+    width: 1200px;
+  }
+
+  .page__header {
+    position: relative;
+    min-height: 110px + 284px;
+
+    &--index {
+      min-height: 853px;
+    }
   }
 }

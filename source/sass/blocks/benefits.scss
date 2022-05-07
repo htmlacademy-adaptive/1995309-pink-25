@@ -1,25 +1,18 @@
 .benefits {
   box-sizing: border-box;
-  color: #283645;
+  color: $darkgrey;
   background-image: url("../../img/index/benefits-screen-smile.png"), url("../../img/index/benefits-phone.png"), url("../../img/index/benefits-background.svg");
   background-repeat: no-repeat;
   background-position: center 762px, center 725px, center bottom;
-
-  &--mobile {
-    padding: 20px;
-  }
+  padding: 20px;
 }
 
 .benefits__wrapper {
   display: flex;
   box-sizing: border-box;
-
-  &--mobile {
-    flex-direction: column;
-    box-sizing: border-box;
-    min-height: 786px - 20px;
-    padding-top: 85px;
-  }
+  flex-direction: column;
+  min-height: 786px - 20px;
+  padding-top: 85px;
 }
 
 .benefits__list {
@@ -28,9 +21,7 @@
 }
 
 .benefits__item {
-  &--mobile {
-    padding-bottom: 30px;
-  }
+  padding-bottom: 30px;
 }
 
 .benefits__title {
@@ -38,21 +29,11 @@
   font-weight: 700;
   text-align: center;
   color: #000000;
-
-  &--mobile {
-    font-size: 18px;
-    line-height: 24px;
-    padding-bottom: 14px;
-  }
+  font-size: 18px;
+  padding-bottom: 14px;
 }
 
 .benefits__description {
-  font-weight: 400;
   margin: 0;
   text-align: center;
-
-  &--mobile {
-    font-size: 14px;
-    line-height: 24px;
-  }
 }

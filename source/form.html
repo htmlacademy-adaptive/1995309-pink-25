@@ -3,15 +3,16 @@
 
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Конкурс Pink</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body class="page__body page__body--mobile">
+  <body class="page__body">
 
-    <header class="page-header page-header--mobile">
+    <header class="page__header page-header">
 
-      <div class="page-header__nav-wrapper nav-wrapper nav-wrapper--mobile">
+      <div class="page-header__nav-wrapper nav-wrapper">
 
         <a class="page-header__logo logo-link" href="#">
           <span class="visually-hidden">Логотип мобильного приложения Pink</span>
@@ -50,8 +51,8 @@
 
       </div>
 
-      <div class="page-header__title-wrapper page-header__title-wrapper page-header__title-wrapper--mobile">
-        <h1 class="page-header__title page-header__title--mobile">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <div class="page-header__title-wrapper page-header__title-wrapper">
+        <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
 
     </header>
@@ -60,29 +61,29 @@
 
       <div class="form">
 
-        <div class="form__description-wrapper form__description-wrapper--mobile content-wrapper content-wrapper--mobile">
-          <p class="form__description form__description--mobile">Поделитесь своей историей и получите
+        <div class="form__description-wrapper content-wrapper">
+          <p class="form__description">Поделитесь своей историей и получите
           шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
         </div>
 
         <form class="form__request" action="https://echo.htmlacademy.ru/" method="post">
 
-          <div class="form__fieldset-wrapper form__fieldset-wrapper--mobile-light">
-          <fieldset class="form__fieldset form__fieldset--mobile contestant contestant--mobile text-fields">
+          <div class="form__fieldset-wrapper form__fieldset-wrapper--light">
+          <fieldset class="form__fieldset contestant text-fields">
 
-            <ul class="contestant__list contestant__list--mobile site-list">
-              <li class="contestant__item contestant__item--mobile">
-                <label class="contestant__label form-label form-label--mobile" for="last-name">ФАМИЛИЯ:</label>
+            <ul class="contestant__list site-list">
+              <li class="contestant__item">
+                <label class="contestant__label form-label" for="last-name">ФАМИЛИЯ:</label>
                 <input class="contestant__input form-input" type="text" id="last-name" name="last-name" placeholder="Укажите фамилию *" required>
               </li>
 
-              <li class="contestant__item contestant__item--mobile">
-                <label class="contestant__label form-label form-label--mobile" for="first-name">ИМЯ:</label>
+              <li class="contestant__item">
+                <label class="contestant__label form-label" for="first-name">ИМЯ:</label>
                 <input class="contestant__input form-input" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя *" required>
               </li>
 
-              <li class="contestant__item contestant__item--mobile">
-                <label class="contestant__label form-label form-label--mobile" for="father-name">ОТЧЕСТВО:</label>
+              <li class="contestant__item">
+                <label class="contestant__label form-label" for="father-name">ОТЧЕСТВО:</label>
                 <input class="contestant__input form-input" type="text" id="father-name" name="father-name" placeholder="Ну и отчество тоже">
               </li>
             </ul>
@@ -90,8 +91,8 @@
           </fieldset>
           </div>
 
-          <div class="form__fieldset-wrapper form__fieldset-wrapper--mobile-checks">
-          <fieldset class="form__fieldset form__fieldset--mobile achievements check-fields">
+          <div class="form__fieldset-wrapper form__fieldset-wrapper--checks">
+          <fieldset class="form__fieldset achievements check-fields">
             <legend class="form-legend">Ваши безбашенные<br>достижения в путешествии</legend>
 
             <ul class="achievements__list site-list">
@@ -129,26 +130,26 @@
           </fieldset>
           </div>
 
-          <div class="form__fieldset-wrapper form__fieldset-wrapper--mobile-light">
-          <fieldset class="form__fieldset form__fieldset--mobile user-contacts text-fields">
+          <div class="form__fieldset-wrapper form__fieldset-wrapper--light">
+          <fieldset class="form__fieldset user-contacts text-fields">
 
-            <ul class="user-contacts__list user-contacts__list--mobile site-list">
-              <li class="user-contacts__item user-contacts__item--mobile">
-                <label class="user-contacts__label form-label form-label--mobile" for="phone">НОМЕР ТЕЛЕФОНА</label>
-                <input class="user-contacts__input user-contacts__input--mobile form-input" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
+            <ul class="user-contacts__list site-list">
+              <li class="user-contacts__item">
+                <label class="user-contacts__label form-label" for="phone">НОМЕР ТЕЛЕФОНА</label>
+                <input class="user-contacts__input form-input" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
               </li>
 
-              <li class="user-contacts__item user-contacts__item--mobile">
-                <label class="user-contacts__label form-label form-label--mobile" for="email">АДРЕС ПОЧТЫ</label>
-                <input class="user-contacts__input user-contacts__input--mobile form-input" type="email" id="email" name="email" placeholder="Введите почту *" required>
+              <li class="user-contacts__item">
+                <label class="user-contacts__label form-label" for="email">АДРЕС ПОЧТЫ</label>
+                <input class="user-contacts__input form-input" type="email" id="email" name="email" placeholder="Введите почту *" required>
               </li>
             </ul>
 
           </fieldset>
           </div>
 
-          <div class="form__fieldset-wrapper form__fieldset-wrapper--mobile-checks">
-          <fieldset class="form__fieldset form__fieldset--mobile platform check-fields">
+          <div class="form__fieldset-wrapper form__fieldset-wrapper--checks">
+          <fieldset class="form__fieldset platform check-fields">
             <legend class="form-legend">С каким приложением путешествовали?</legend>
 
             <ul class="platform__list site-list">
@@ -171,18 +172,18 @@
           </fieldset>
           </div>
 
-          <div class="form__fieldset-wrapper form__fieldset-wrapper--mobile-light">
-          <fieldset class="form__fieldset form__fieldset--mobile story check-fields">
-            <div class="story__item story__item--mobile">
+          <div class="form__fieldset-wrapper form__fieldset-wrapper--light">
+          <fieldset class="form__fieldset story check-fields">
+            <div class="story__item">
               <label class="story__label form-legend" for="emotions">ОПИШИТЕ СВОИ ЭМОЦИИ</label>
               <textarea class="story__input form-input" id="emotions" name="emotional-story" rows="12" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
           </fieldset>
           </div>
 
-          <div class="form__fieldset-wrapper form__fieldset-wrapper--mobile-light submit-wrapper submit-wrapper--mobile">
-            <button class="form__button form-button form-button--mobile submit-button" type="submit">Отправить форму</button>
-            <p class="form__note form__note--mobile"><span class="form__asterisk">*</span>— обязательные поля</p>
+          <div class="form__fieldset-wrapper form__fieldset-wrapper--light submit-wrapper">
+            <button class="form__button form-button submit-button" type="submit">Отправить форму</button>
+            <p class="form__note"><span class="form__asterisk">*</span>— обязательные поля</p>
           </div>
 
         </form>
@@ -191,9 +192,9 @@
 
     </main>
 
-    <footer class="page-footer page-footer--mobile">
+    <footer class="page-footer">
 
-      <div class="page-footer__content-wrapper page-footer__content-wrapper--mobile">
+      <div class="page-footer__content-wrapper">
 
         <a class="page-footer__logo" href="#">
           <span class="visually-hidden">Логотип мобильного приложения Pink</span>
@@ -240,9 +241,9 @@
 
         </div>
 
-        <div class="page-footer__copyright page-footer__copyright--mobile">
+        <div class="page-footer__copyright">
 
-          <a class="page-footer__copyright-link page-footer__copyright-link--mobile" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
             <span class="visually-hidden">HTML-академия</span>
             <svg class="page-footer__academy-logo" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.6 0h-.1L0 1.4V26l13.5 8L27 26V1.4L13.6 0Zm11.6 25-11.7 7-11.7-7V15l11.7 6.8v1.3l-8-4.7v1.2l8 4.8v1.3l-8-4.8v1.2l8 4.9 8.1-4.9V17l3.6-2.1V25Zm0-11.5L22 15.3l-1.5 1-7-4.3v1.2l6 3.6-.2.1-.8.5-5-3v1.3l3.9 2.3-1 .6-3-1.7v1.2l2 1.2-2 1.1-11.6-6.8 11.6-7 11.8 6.9Zm0-1.3L13.4 5.3l-11.6 7V3l11.7-1.2L25.2 3v9.2Z"/>
@@ -254,28 +255,28 @@
 
     </footer>
 
-    <div class="modal modal--mobile-fault modal--mobile-accept">
+    <div class="modal modal--fault modal--accept">
 
-      <div class="modal__content-wrapper modal__content-wrapper--mobile-fault">
-      <p class="modal__title modal__title--mobile">Что-то пошло не так!</p>
-      <p class="modal__description modal__description--mobile">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <div class="modal__content-wrapper modal__content-wrapper--fault">
+      <p class="modal__title">Что-то пошло не так!</p>
+      <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       </div>
 
-      <div class="modal__button-wrapper modal__button-wrapper--mobile-fault">
-        <button class="modal__button form-button form-button--mobile submit-button" type="button">ОК</button>
+      <div class="modal__button-wrapper modal__button-wrapper--fault">
+        <button class="modal__button form-button submit-button" type="button">ОК</button>
       </div>
 
     </div>
 
-    <div class="modal modal--mobile modal--accept">
+    <div class="modal modal--accept">
 
-      <div class="modal__content-wrapper modal__content-wrapper--mobile-accept">
-      <p class="modal__title modal__title--mobile">Ваша заявка отправлена</p>
-      <p class="modal__description modal__description--mobile">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим&nbsp;вас.</p>
+      <div class="modal__content-wrapper modal__content-wrapper--accept">
+      <p class="modal__title">Ваша заявка отправлена</p>
+      <p class="modal__description">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим&nbsp;вас.</p>
       </div>
 
-      <div class="modal__button-wrapper modal__button-wrapper--mobile-accept">
-        <button class="modal__button form-button form-button--mobile submit-button" type="button">ЗАКРЫТЬ ОКНО</button>
+      <div class="modal__button-wrapper modal__button-wrapper--accept">
+        <button class="modal__button form-button submit-button" type="button">ЗАКРЫТЬ ОКНО</button>
       </div>
 
     </div>

@@ -1,31 +1,20 @@
-.form {
-  color: #283645;
-}
-
 .form__description-wrapper {
-  &--mobile {
-    padding-bottom: 0;
-  }
+  padding-bottom: 39px;
 }
 
 .form__description {
   margin: 0;
   text-align: center;
-  font-weight: 400;
-
-  &--mobile {
-    font-size: 14px;
-    line-height: 30px;
-  }
+  line-height: 30px;
 }
 
 .form__fieldset-wrapper {
-  &--mobile-light {
+  &--light {
     padding: 20px;
     padding-top: 34px;
   }
 
-  &--mobile-checks {
+  &--checks {
     padding: 20px;
     padding-top: 40px;
     background-color: #f2f2f2;
@@ -35,10 +24,7 @@
 .form__fieldset {
   margin: 0;
   padding: 0;
-
-  &--mobile {
-    border: none;
-  }
+  border: none;
 }
 
 .form__note {
@@ -47,12 +33,9 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-
-  &--mobile {
-    padding-top: 36px;
-  }
+  padding-top: 36px;
 }
 
 .form__asterisk {
-  color: #d22856;
+  color: $pink;
 }
