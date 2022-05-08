@@ -19,3 +19,27 @@
   top: 16px;
   right: 21px;
 }
+
+@media (min-width: $tablet-width) {
+  .body-cell__value-true {
+    top: 14px;
+    right: 60px;
+  }
+
+  .body-cell__value-false {
+    top: 10px;
+    right: 63px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .body-cell__value-true {
+    top: 21px;
+    right: 101px;
+  }
+
+  .body-cell__value-false {
+    top: 16px;
+    right: 103px;
+  }
+}
