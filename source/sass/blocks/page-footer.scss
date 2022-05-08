@@ -2,10 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box;
   flex-direction: column;
   padding: 40px 70px 40px 70px;
-  min-height: 284px;
+  min-height: 284px - 40px - 40px;
 }
 
 .page-footer__logo {
@@ -65,4 +64,20 @@
 
 .page-footer__academy-logo {
   fill: $pink;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__content-wrapper {
+    flex-direction: row;
+    padding: 36px 20px 37px 20px;
+    min-height: 127px - 36px - 37px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__content-wrapper {
+    align-items: center;
+    padding: 71px 130px 72px 130px;
+    min-height: 197px - 71px - 72px;
+  }
 }
