@@ -30,3 +30,24 @@
     color: $darkgrey;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .contestant__item {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 56px;
+
+    &--father-name {
+      padding-bottom: 0;
+    }
+  }
+
+  .contestant__input {
+    flex-grow: 1;
+  }
+
+  .contestant__label {
+    padding-right: 20px;
+  }
+}

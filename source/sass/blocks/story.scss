@@ -3,13 +3,15 @@
   flex-direction: column;
 }
 
-.story__label {
-  padding-bottom: 20px;
-}
-
 .story__input {
   padding-top: 14px;
+  display: block;
+  height: 197px - 14px;
   resize: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: $darkgrey;
 
   &::-webkit-input-placeholder {
     font-family: "Open Sans", sans-serif;
@@ -23,5 +25,17 @@
     font-size: 18px;
     line-height: 30px;
     color: $darkgrey;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .story__input {
+    height: 189px - 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .story__input {
+    height: 124px - 14px;
   }
 }

@@ -61,15 +61,16 @@
 
       <div class="form">
 
-        <div class="form__description-wrapper content-wrapper">
+        <div class="form__description-wrapper">
           <p class="form__description">Поделитесь своей историей и получите
-          шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+          шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="form__add-description">Пожалуйста, заполните форму ниже:</span></p>
+
         </div>
 
         <form class="form__request" action="https://echo.htmlacademy.ru/" method="post">
 
-          <div class="form__fieldset-wrapper form__fieldset-wrapper--light">
-          <fieldset class="form__fieldset contestant text-fields">
+          <div class="form__fieldset-wrapper form__fieldset-wrapper--light form__fieldset-wrapper--contestant">
+          <fieldset class="form__fieldset form__fieldset--contestant contestant text-fields">
 
             <ul class="contestant__list site-list">
               <li class="contestant__item">
@@ -82,7 +83,7 @@
                 <input class="contestant__input form-input" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя *" required>
               </li>
 
-              <li class="contestant__item">
+              <li class="contestant__item contestant__item--father-name">
                 <label class="contestant__label form-label" for="father-name">ОТЧЕСТВО:</label>
                 <input class="contestant__input form-input" type="text" id="father-name" name="father-name" placeholder="Ну и отчество тоже">
               </li>
@@ -91,9 +92,9 @@
           </fieldset>
           </div>
 
-          <div class="form__fieldset-wrapper form__fieldset-wrapper--checks">
-          <fieldset class="form__fieldset achievements check-fields">
-            <legend class="form-legend">Ваши безбашенные<br>достижения в путешествии</legend>
+          <div class="form__fieldset-wrapper form__fieldset-wrapper--checks form__fieldset-wrapper--achievements">
+          <fieldset class="form__fieldset form__fieldset--achievements achievements check-fields">
+            <legend class="form-legend form-legend--achievements">Ваши безбашенные достижения&nbsp;в&nbsp;путешествии</legend>
 
             <ul class="achievements__list site-list">
               <li class="achievements__item">
@@ -130,17 +131,18 @@
           </fieldset>
           </div>
 
-          <div class="form__fieldset-wrapper form__fieldset-wrapper--light">
-          <fieldset class="form__fieldset user-contacts text-fields">
+          <div class="form__fieldset-wrapper form__fieldset-wrapper--light form__fieldset-wrapper--user-contacts">
+          <fieldset class="form__fieldset form__fieldset--user-contacts user-contacts text-fields">
+            <legend class="form-legend form-legend--user-contacts">контактная информация</legend>
 
             <ul class="user-contacts__list site-list">
               <li class="user-contacts__item">
-                <label class="user-contacts__label form-label" for="phone">НОМЕР ТЕЛЕФОНА</label>
+                <label class="user-contacts__label form-label form-label--user-contacts" for="phone">НОМЕР ТЕЛЕФОНА</label>
                 <input class="user-contacts__input form-input" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
               </li>
 
               <li class="user-contacts__item">
-                <label class="user-contacts__label form-label" for="email">АДРЕС ПОЧТЫ</label>
+                <label class="user-contacts__label form-label form-label--user-contacts" for="email">АДРЕС ПОЧТЫ</label>
                 <input class="user-contacts__input form-input" type="email" id="email" name="email" placeholder="Введите почту *" required>
               </li>
             </ul>
@@ -148,9 +150,9 @@
           </fieldset>
           </div>
 
-          <div class="form__fieldset-wrapper form__fieldset-wrapper--checks">
-          <fieldset class="form__fieldset platform check-fields">
-            <legend class="form-legend">С каким приложением путешествовали?</legend>
+          <div class="form__fieldset-wrapper form__fieldset-wrapper--checks form__fieldset-wrapper--platform">
+          <fieldset class="form__fieldset form__fieldset--platform platform check-fields">
+            <legend class="form-legend form-legend--platform">С каким приложением путешествовали?</legend>
 
             <ul class="platform__list site-list">
               <li class="platform__item">
@@ -172,18 +174,18 @@
           </fieldset>
           </div>
 
-          <div class="form__fieldset-wrapper form__fieldset-wrapper--light">
-          <fieldset class="form__fieldset story check-fields">
+          <div class="form__fieldset-wrapper form__fieldset-wrapper--light form__fieldset-wrapper--story">
+          <fieldset class="form__fieldset form__fieldset--story story check-fields">
+            <legend class="form-legend form-legend--story">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
             <div class="story__item">
-              <label class="story__label form-legend" for="emotions">ОПИШИТЕ СВОИ ЭМОЦИИ</label>
-              <textarea class="story__input form-input" id="emotions" name="emotional-story" rows="12" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              <textarea class="story__input form-input" id="emotions" name="emotional-story" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
           </fieldset>
           </div>
 
-          <div class="form__fieldset-wrapper form__fieldset-wrapper--light submit-wrapper">
+          <div class="form__fieldset-wrapper form__fieldset-wrapper--light form__fieldset-wrapper--submit submit-wrapper">
             <button class="form__button form-button submit-button" type="submit">Отправить форму</button>
-            <p class="form__note"><span class="form__asterisk">*</span>— обязательные поля</p>
+            <p class="form__note"><span class="form__asterisk">* </span>— обязательные <span class="form__add-note">для заполнения </span>поля</p>
           </div>
 
         </form>

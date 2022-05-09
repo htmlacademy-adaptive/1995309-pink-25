@@ -4,3 +4,9 @@
   cursor: pointer;
   width: 100%;
 }
+
+@media (min-width: $tablet-width) {
+  .form-button {
+    width: 296px;
+  }
+}

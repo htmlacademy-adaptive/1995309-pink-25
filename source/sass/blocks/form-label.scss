@@ -5,3 +5,11 @@
   padding-left: 24px;
   padding-bottom: 7px;
 }
+
+@media (min-width: $tablet-width) {
+  .form-label {
+    &--user-contacts {
+      padding-top: 10px;
+    }
+  }
+}
