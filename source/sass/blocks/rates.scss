@@ -1,28 +1,67 @@
 .rates {
-  box-sizing: border-box;
-  background-image: url("../../img/index/rates-background.svg");
-  background-repeat: no-repeat;
-
-  &--mobile {
-    min-height: 479px;
-    overflow: hidden;
-  }
+  //background-image: url("../img/index/rates-background.svg");
+  //background-repeat: no-repeat;
+  min-height: 480px;
+  overflow: hidden;
+  background-color: $lightgrey;
 }
 
 .rates__wrapper {
   position: relative;
-
-  &--mobile {
-    height: 279px + 127px;
-  }
+  min-height: 279px + 127px;
 }
 
 .rates__table-wrapper {
   position: absolute;
   padding-top: 127px;
   left: -256px;
+  width: 276px * 3 + 4px;
+}
 
-  &--mobile {
-    width: 276px * 3 + 4px;
+@media (min-width: $tablet-width) {
+  .rates {
+    min-height: 2515px - 2130px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .rates__wrapper {
+    padding-top: 101px;
+    padding-bottom: 68px;
+    min-height: 2450px - 2230px;
+  }
+
+  .rates__table-wrapper {
+    position: static;
+    padding: 0;
+    width: 100%;
+  }
+
+  .rates__toggles {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .rates {
+    min-height: 3155px - 2620px;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+
+  .rates__wrapper {
+    padding-top: 159px;
+    padding-bottom: 99px;
+    min-height: 2450px - 2230px;
+  }
+
+  .rates__table-wrapper {
+    position: static;
+    padding: 0;
+    width: 100%;
+  }
+
+  .rates__toggles {
+    display: none;
   }
 }

@@ -1,8 +1,6 @@
 .photo__content-container {
-  &--mobile {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .photo__content {
@@ -11,11 +9,8 @@
   box-sizing: border-box;
   background-color: #f2f2f2;
   width: 100%;
-
-  &--mobile {
-    padding: 17px;
-    min-height: 121px;
-  }
+  padding: 17px;
+  min-height: 121px;
 }
 
 .photo__image {
@@ -28,19 +23,12 @@
 
 .photo__author-name {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
 }
 
 .photo__text {
-  font-size: 14px;
-  line-height: 24px;
   text-align: left;
   margin: 0;
-
-  &--mobile {
-    padding-bottom: 10px;
-  }
+  padding-bottom: 10px;
 }
 
 .photo__date {
@@ -60,8 +48,63 @@
 
 .photo__like-count {
   font-size: 12px;
-  line-height: 24px;
-  font-weight: 400;
   text-transform: uppercase;
-  color: #d22856;
+  color: $pink;
+}
+
+@media (min-width: $tablet-width) {
+  .photo__content {
+    padding: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: auto;
+    height: 155px;
+    justify-content: space-between;
+
+    &--win {
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: 121px;
+    }
+  }
+
+  .photo__text {
+    padding: 0;
+
+    &--win {
+      order: 1;
+    }
+  }
+
+  .photo__likes {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    &--win {
+      width: 610px - 490px;
+    }
+  }
+
+  .photo__like-button {
+    order: 1;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo__content-container {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+
+  .photo__content {
+    align-items: center;
+
+    &--win {
+      align-content: center;
+      height: 96px;
+      padding: 20px 30px 20px 27px;
+    }
+  }
 }

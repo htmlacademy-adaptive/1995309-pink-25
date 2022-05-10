@@ -1,12 +1,6 @@
 .apps {
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
-  padding: 20px;
-
-  &--mobile {
-    height: 271px;
-  }
 }
 
 .apps__content {
@@ -14,8 +8,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
-  padding-top: 8px;
-  padding-bottom: 18px;
   flex-grow: 1;
 }
 
@@ -38,7 +30,47 @@
 .apps__description {
   margin: 0;
   font-weight: 300;
-  font-size: 14px;
-  line-height: 24px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .apps__content {
+    padding: 0;
+    align-items: center;
+  }
+
+  .apps__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+  }
+
+  .apps__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 204px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .apps__description {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .apps__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 204px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .apps__description {
+    font-size: 18px;
+  }
 }

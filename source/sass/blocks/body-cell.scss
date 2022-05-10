@@ -1,15 +1,9 @@
 .body-cell {
   vertical-align: middle;
   text-transform: uppercase;
-  font-weight: 400;
   padding: 0;
-  color: #283645;
-
-  &--mobile {
-    padding-left: 20px;
-    font-size: 14px;
-    line-height: 30px;
-  }
+  padding-left: 20px;
+  line-height: 30px;
 }
 
 .body-cell__value {
@@ -17,15 +11,35 @@
 }
 
 .body-cell__value-true {
-  &--mobile {
-    top: 21px;
-    right: 19px;
-  }
+  top: 21px;
+  right: 19px;
 }
 
 .body-cell__value-false {
-  &--mobile {
+  top: 16px;
+  right: 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .body-cell__value-true {
+    top: 14px;
+    right: 60px;
+  }
+
+  .body-cell__value-false {
+    top: 10px;
+    right: 63px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .body-cell__value-true {
+    top: 21px;
+    right: 101px;
+  }
+
+  .body-cell__value-false {
     top: 16px;
-    right: 21px;
+    right: 103px;
   }
 }

@@ -1,25 +1,16 @@
 .benefits {
-  box-sizing: border-box;
-  color: #283645;
-  background-image: url("../../img/index/benefits-screen-smile.png"), url("../../img/index/benefits-phone.png"), url("../../img/index/benefits-background.svg");
+  color: $darkgrey;
+  //background-image: url("../img/index/benefits-screen-smile.png"), url("../img/index/benefits-phone.png"), url("../img/index/benefits-background.svg");
   background-repeat: no-repeat;
   background-position: center 762px, center 725px, center bottom;
-
-  &--mobile {
-    padding: 20px;
-  }
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .benefits__wrapper {
   display: flex;
-  box-sizing: border-box;
-
-  &--mobile {
-    flex-direction: column;
-    box-sizing: border-box;
-    min-height: 786px - 20px;
-    padding-top: 85px;
-  }
+  min-height: 1735px - 949px - 85px;
+  padding-top: 85px;
 }
 
 .benefits__list {
@@ -28,9 +19,7 @@
 }
 
 .benefits__item {
-  &--mobile {
-    padding-bottom: 30px;
-  }
+  padding-bottom: 30px;
 }
 
 .benefits__title {
@@ -38,21 +27,70 @@
   font-weight: 700;
   text-align: center;
   color: #000000;
-
-  &--mobile {
-    font-size: 18px;
-    line-height: 24px;
-    padding-bottom: 14px;
-  }
+  font-size: 18px;
+  padding-bottom: 14px;
 }
 
 .benefits__description {
-  font-weight: 400;
   margin: 0;
   text-align: center;
+}
 
-  &--mobile {
-    font-size: 14px;
-    line-height: 24px;
+@media (min-width: $tablet-width) {
+  .benefits__wrapper {
+    min-height: 1454px - 967px - 99px;
+    padding-top: 99px;
+    padding-left: 330px - 20px;
+  }
+
+  .benefits__item {
+    padding-bottom: 33px;
+  }
+
+  .benefits__title {
+    text-align: left;
+  }
+
+  .benefits__description {
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .benefits {
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-bottom: 50px;
+  }
+
+  .benefits__wrapper {
+    min-height: 1732px - 1536px;
+    padding-top: 99px;
+    padding-left: 0;
+  }
+
+  .benefits__list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .benefits__item {
+    width: 252px - 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 0;
+  }
+
+  .benefits__title {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .benefits__description {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
   }
 }

@@ -1,58 +1,205 @@
-.form {
-  color: #283645;
-}
-
 .form__description-wrapper {
-  &--mobile {
-    padding-bottom: 0;
-  }
+  padding-top: 46px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .form__description {
   margin: 0;
   text-align: center;
-  font-weight: 400;
+  line-height: 30px;
+}
 
-  &--mobile {
-    font-size: 14px;
-    line-height: 30px;
-  }
+.form__add-description {
+  display: none;
 }
 
 .form__fieldset-wrapper {
-  &--mobile-light {
+  &--light {
     padding: 20px;
     padding-top: 34px;
   }
 
-  &--mobile-checks {
+  &--checks {
     padding: 20px;
     padding-top: 40px;
-    background-color: #f2f2f2;
+    background-color: $lightgrey;
   }
 }
 
 .form__fieldset {
   margin: 0;
   padding: 0;
-
-  &--mobile {
-    border: none;
-  }
+  border: none;
 }
 
 .form__note {
-  font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-
-  &--mobile {
-    padding-top: 36px;
-  }
+  padding-top: 36px;
 }
 
 .form__asterisk {
-  color: #d22856;
+  color: $pink;
+}
+
+.form__add-note {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form__request {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__description-wrapper {
+    padding: 90px 85px 67px 85px;
+  }
+
+  .form__description {
+    font-size: 18px;
+  }
+
+  .form__add-description {
+    display: inline;
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .form__fieldset-wrapper {
+    &--light {
+      padding: 9px 20px 56px 20px;
+    }
+
+    &--checks {
+      padding: 9px 20px 56px 20px;
+      background-color: #ffffff;
+    }
+
+    &--contestant {
+      order: -2;
+    }
+
+    &--platform {
+      order: -1;
+    }
+
+    &--user-contacts {
+      order: 0;
+    }
+
+    &--achievements {
+      order: 1;
+    }
+
+    &--story {
+      order: 2;
+    }
+
+    &--submit {
+      order: 3;
+    }
+  }
+
+  .form__fieldset {
+    border: 2px #e5e5e5 solid;
+    padding-left: 60px;
+    padding-right: 60px;
+
+    &--contestant {
+      border: none;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &--platform {
+      padding-top: 54px;
+      padding-bottom: 54px;
+    }
+
+    &--user-contacts {
+      padding-top: 46px;
+    }
+
+    &--achievements {
+      padding-top: 54px;
+      padding-bottom: 50px;
+    }
+
+    &--story {
+      padding-top: 47px;
+      padding-bottom: 53px;
+    }
+  }
+
+  .form__note {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__description-wrapper {
+    padding: 90px 222px 75px 222px;
+  }
+
+  .form__request {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+
+  .form__fieldset-wrapper {
+    width: 100%;
+
+    &--light {
+      padding: 9px 130px 56px 130px;
+    }
+
+    &--checks {
+      padding: 9px 130px 56px 130px;
+      background-color: #ffffff;
+    }
+
+    &--contestant {
+      width: 565px - 130px;
+      padding-right: 635px - 565px;
+    }
+
+    &--platform {
+      width: 1070px - 635px;
+      padding-left: 0;
+    }
+  }
+
+  .form__fieldset {
+    &--platform {
+      padding-top: 54px;
+      padding-bottom: 54px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    &--user-contacts {
+      padding-top: 46px;
+    }
+
+    &--achievements {
+      padding-top: 54px;
+      padding-bottom: 50px;
+    }
+
+    &--story {
+      padding-top: 47px;
+      padding-bottom: 53px;
+    }
+  }
+
+  .form__add-note {
+    display: inline;
+  }
 }

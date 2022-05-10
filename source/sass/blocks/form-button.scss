@@ -2,8 +2,11 @@
   height: 59px;
   padding: 0;
   cursor: pointer;
+  width: 100%;
+}
 
-  &--mobile {
-    width: 100%;
+@media (min-width: $tablet-width) {
+  .form-button {
+    width: 296px;
   }
 }

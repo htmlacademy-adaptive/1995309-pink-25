@@ -21,7 +21,7 @@
     border-color: rgba(40, 54, 69, 0.1);
 
     &:hover {
-      border-color: #283645;
+      border-color: $darkgrey;
     }
 
     &:active {
@@ -34,14 +34,14 @@
   }
 
   &--editor-upload {
-    color: #d22856;
-    border-color: #d22856;
+    color: $pink;
+    border-color: $pink;
     background-color: transparent;
     cursor: pointer;
 
     &:hover {
       color: #ffffff;
-      background-color: #d22856;
+      background-color: $pink;
     }
 
     &:active {
@@ -50,8 +50,8 @@
   }
 
   &--editor-cansel {
-    color: #283645;
-    border-color: #283645;
+    color: $darkgrey;
+    border-color: $darkgrey;
     background-color: transparent;
     opacity: 0.1;
     cursor: pointer;
@@ -62,7 +62,7 @@
 
     &:active {
       color: #ffffff;
-      background-color: #283645;
+      background-color: $darkgrey;
     }
   }
 }

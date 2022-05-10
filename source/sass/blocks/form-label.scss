@@ -1,12 +1,15 @@
 .form-label {
-  color: #d22856;
+  color: $pink;
   text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 400;
   line-height: 30px;
+  padding-left: 24px;
+  padding-bottom: 7px;
+}
 
-  &--mobile {
-    padding-left: 24px;
-    padding-bottom: 7px;
+@media (min-width: $tablet-width) {
+  .form-label {
+    &--user-contacts {
+      padding-top: 10px;
+    }
   }
 }
