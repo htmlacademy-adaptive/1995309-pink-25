@@ -61,8 +61,8 @@
 
       <div class="catalog">
 
-        <div class="catalog__intro-wrapper content-wrapper">
-          <p class="catalog__intro">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
+        <div class="catalog__intro-wrapper">
+          <p class="catalog__intro">Взгляните на фотографии, которые выкладывают пользователи! Видите,&nbsp;как&nbsp;не хватает ваших?</p>
         </div>
 
         <section class="catalog__gallery gallery">
@@ -76,7 +76,7 @@
             </a>
 
             <div class="photo__content-container">
-            <div class="photo__content photo-content-wrapper">
+            <div class="photo__content photo__content--win ">
               <p class="photo__author">
                 <b class="photo__author-name">Анна </b><time class="photo__date" datetime="2022-04-08T23:00">(5 минут назад)</time>
               </p>
@@ -106,10 +106,12 @@
               </a>
 
               <div class="photo__content">
+                <div class="photo__text-content">
                 <p class="photo__author"><b class="photo__author-name">Левон </b><time class="photo__date" datetime="2022-04-08T18:00">(5 часов назад)</time></p>
                 <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                </div>
 
-                <div class="photo__likes photo__likes">
+                <div class="photo__likes">
                   <button class="photo__like-button" type="button">
                     <span class="visually-hidden">Нравится</span>
                     <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -129,10 +131,12 @@
               </a>
 
               <div class="photo__content">
+                <div class="photo__text-content">
                 <p class="photo__author"><b class="photo__author-name">Антон </b><time class="photo__date" datetime="2022-04-08T11:00">(12 часов назад)</time></p>
                 <p class="photo__text">Соседи будут рады!</p>
+                </div>
 
-                <div class="photo__likes photo__likes">
+                <div class="photo__likes">
                   <button class="photo__like-button" type="button">
                     <span class="visually-hidden">Нравится</span>
                     <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -152,10 +156,12 @@
               </a>
 
               <div class="photo__content">
+                <div class="photo__text-content">
                 <p class="photo__author"><b class="photo__author-name">Борис </b><time class="photo__date" datetime="2022-04-08T03:00">(20 часов назад)</time></p>
                 <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                </div>
 
-                <div class="photo__likes photo__likes">
+                <div class="photo__likes">
                   <button class="photo__like-button" type="button">
                     <span class="visually-hidden">Нравится</span>
                     <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -175,10 +181,12 @@
               </a>
 
               <div class="photo__content">
+                <div class="photo__text-content">
                 <p class="photo__author"><b class="photo__author-name">Сергей </b><time class="photo__date" datetime="2022-04-07T22:00">(25 часов назад)</time></p>
                 <p class="photo__text">Самая кубанская в мире!</p>
+                </div>
 
-                <div class="photo__likes photo__likes">
+                <div class="photo__likes">
                   <button class="photo__like-button" type="button">
                     <span class="visually-hidden">Нравится</span>
                     <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -198,10 +206,12 @@
               </a>
 
               <div class="photo__content">
+                <div class="photo__text-content">
                 <p class="photo__author"><b class="photo__author-name">Максим </b><time class="photo__date" datetime="2022-04-07T07:00">(40 часов назад)</time></p>
                 <p class="photo__text">Где снег-то?</p>
+                </div>
 
-                <div class="photo__likes photo__likes">
+                <div class="photo__likes">
                   <button class="photo__like-button" type="button">
                     <span class="visually-hidden">Нравится</span>
                     <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -221,10 +231,12 @@
               </a>
 
               <div class="photo__content">
+                <div class="photo__text-content">
                 <p class="photo__author"><b class="photo__author-name">Надежда </b><time class="photo__date" datetime="2022-04-07T02:00">(45 часов назад)</time></p>
                 <p class="photo__text">Всем GM и взаимные лайки!</p>
+                </div>
 
-                <div class="photo__likes photo__likes">
+                <div class="photo__likes">
                   <button class="photo__like-button" type="button">
                     <span class="visually-hidden">Нравится</span>
                     <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -241,7 +253,7 @@
 
         </section>
 
-        <div class="catalog__motive-wrapper content-wrapper">
+        <div class="catalog__motive-wrapper">
           <p class="catalog__intro">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
         </div>
 
@@ -255,6 +267,8 @@
               <input class="form-photo__input visually-hidden" type="file" id="image" name="image" accept="image/jpeg, image/png, image/gif">
               <img src="img/gallery/photo-editor-mobile.jpg" alt="Для редактирования.">
 
+              <div class="form-photo__editor-wrapper">
+
               <div class="form-photo__editor editor">
 
                 <div class="editor__buttons-wrapper">
@@ -266,6 +280,10 @@
                     </svg>
                   </button>
 
+                  <div class="editor__range-wrapper editor__range-wrapper--crop">
+                    <input class="editor__range visually-hidden" type="range" min="0" max="10" value="8">
+                  </div>
+
                   <button class="editor__button editor__button--inactive" type="button">
                     <span class="visually-hidden">Выполнить заливку</span>
                     <svg width="48" height="43" viewBox="0 0 48 43" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -274,6 +292,10 @@
                       </g>
                     </svg>
                   </button>
+
+                  <div class="editor__range-wrapper editor__range-wrapper--fill">
+                    <input class="editor__range visually-hidden" type="range" min="0" max="10" value="8">
+                  </div>
 
                   <button class="editor__button editor__button--inactive" type="button">
                     <span class="visually-hidden">Настроить контраст</span>
@@ -285,10 +307,10 @@
                     </svg>
                   </button>
 
-                </div>
+                  <div class="editor__range-wrapper editor__range-wrapper--contrast">
+                    <input class="editor__range visually-hidden" type="range" min="0" max="10" value="8">
+                  </div>
 
-                <div class="editor__range-wrapper">
-                  <input class="editor__range visually-hidden" type="range" min="0" max="10" value="8">
                 </div>
 
               </div>
@@ -296,6 +318,8 @@
               <div class="form-photo__button-wrapper">
                 <button class="form-photo__button button button--editor-upload" type="submit">Запостить</button>
                 <button class="form-photo__button button button--editor-cansel" type="reset">Отмена</button>
+              </div>
+
               </div>
 
             </form>

@@ -1,9 +1,29 @@
 .photo-editor {
-  background-color: #f2f2f2;
+  background-color: $lightgrey;
 }
 
 .photo-editor__form-wrapper {
   display: flex;
   flex-direction: column;
   padding: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-editor__form-wrapper {
+    padding-top: 57px;
+    padding-bottom: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-editor {
+    padding-left: 130px;
+    padding-right: 130px;
+    background-color: #ffffff;
+  }
+
+  .photo-editor__form-wrapper {
+    padding: 57px 80px 57px 80px;
+    background-color: $lightgrey;
+  }
 }

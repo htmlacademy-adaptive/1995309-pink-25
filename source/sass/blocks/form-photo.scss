@@ -12,3 +12,44 @@
 .form-photo__button {
   width: 100%;
 }
+
+@media (min-width: $tablet-width) {
+  .form-photo {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form-photo__editor-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 640px - 365px;
+  }
+
+  .form-photo__editor {
+    padding: 0;
+  }
+
+  .form-photo__button-wrapper {
+    padding-left: 2px;
+    padding-right: 13px;
+    height: 3404px - 3270px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-photo__editor-wrapper {
+    width: 1010px - 600px;
+  }
+
+  .form-photo__button-wrapper {
+    flex-direction: row;
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .form-photo__button {
+    width: 183px;
+  }
+}
