@@ -292,6 +292,7 @@
 }
 .site-list {
   margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
@@ -878,15 +879,11 @@
   }
 
   .contacts__list {
-    padding-bottom: 7px;
-  }
-
-  .contacts__item-wrapper {
     display: flex;
-    justify-content: space-between;
-    padding-right: 30px;
-    padding-bottom: 25px;
-    padding-left: 47px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    padding-bottom: 7px;
   }
 
   .contacts__map {
@@ -895,9 +892,7 @@
 }
 @media (min-width: 1200px) {
   .contacts__wrapper {
-    padding-left: 130px;
-    padding-right: 130px;
-    padding-top: 64px;
+    padding-left: 64px 130px 25px 130px;
   }
 
   .contacts__title {
@@ -907,25 +902,12 @@
   }
 
   .contacts__list {
-    position: relative;
-    padding-bottom: 0;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
-  .contacts__item-wrapper {
-    padding-left: 47px;
-    padding-right: 30px;
-    padding-bottom: 53px;
-  }
-
-  .contacts__item--address {
-    position: absolute;
-    top: 0;
-    left: 354px;
-    padding: 0;
-  }
-
-  .contacts__item-description {
-    padding-bottom: 0;
+  .contacts__item--email {
+    order: 3;
   }
 
   .contacts__map {
@@ -1249,6 +1231,24 @@
   .form__fieldset-wrapper--platform {
     width: 435px;
     padding-left: 0;
+  }
+
+  .form__fieldset--platform {
+    padding-top: 54px;
+    padding-bottom: 54px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .form__fieldset--user-contacts {
+    padding-top: 46px;
+  }
+  .form__fieldset--achievements {
+    padding-top: 54px;
+    padding-bottom: 50px;
+  }
+  .form__fieldset--story {
+    padding-top: 47px;
+    padding-bottom: 53px;
   }
 
   .form__add-note {
