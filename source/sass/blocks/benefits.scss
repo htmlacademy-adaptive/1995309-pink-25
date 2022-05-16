@@ -37,6 +37,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .benefits {
+    background-image: none;
+    background-color: $lightgrey;
+  }
+
   .benefits__wrapper {
     min-height: 1454px - 967px - 99px;
     padding-top: 99px;
