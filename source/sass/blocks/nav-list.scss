@@ -1,0 +1,24 @@
+@media (min-width: $desktop-width) {
+  .nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-list__item a {
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #ffffff;
+
+    &:hover {
+      color: $pink;
+    }
+
+    &:active {
+      color: #ffffff;
+      opacity: 0.3;
+    }
+  }
+}

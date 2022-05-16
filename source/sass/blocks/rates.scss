@@ -3,7 +3,6 @@
   background-repeat: no-repeat;
   min-height: 480px;
   overflow: hidden;
-  background-color: $lightgrey;
 }
 
 .rates__wrapper {
@@ -23,6 +22,8 @@
     min-height: 2515px - 2130px;
     padding-left: 20px;
     padding-right: 20px;
+    background-image: none;
+    background-color: $lightgrey;
   }
 
   .rates__wrapper {

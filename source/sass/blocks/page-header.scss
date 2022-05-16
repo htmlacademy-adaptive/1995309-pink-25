@@ -83,6 +83,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-header__nav-wrapper {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-right: 130px;
+    padding-left: 130px;
+  }
+
   .page-header__title-wrapper {
     padding-top: 74px - 24px;
     padding-right: 130px;
