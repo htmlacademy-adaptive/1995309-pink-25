@@ -1,14 +1,18 @@
 .apps {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  justify-content: flex-end;
 }
 
 .apps__content {
   display: flex;
+  box-sizing: border-box;
   flex-direction: column;
+  min-height: 271px;
+  padding: 28px 20px 31px 20px;
   justify-content: space-between;
   align-items: stretch;
-  flex-grow: 1;
 }
 
 .apps__button {
