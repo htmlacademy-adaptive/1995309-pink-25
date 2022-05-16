@@ -1,0 +1,36 @@
+.achievements__item {
+  &:not(:last-child) {
+    padding-bottom: 47px;
+  }
+}
+
+.achievements__label {
+  display: flex;
+  align-items: center;
+}
+
+.achievements__label .control__mark--checkbox {
+  margin-right: 20px;
+}
+
+.achievements__input[type="checkbox"]:checked + .control__mark--checkbox::before {
+  position: absolute;
+  top: 9px;
+  left: 7px;
+  width: 22px;
+  height: 16px;
+  background-color: transparent;
+  content: "";
+  background-image: url("../../img/form-check.svg");
+}
+
+@media (min-width: $desktop-width) {
+  .achievements__list {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 265px 245px 210px;
+    grid-template-rows: 39px 39px;
+    row-gap: 47px;
+    column-gap: 50px;
+  }
+}
