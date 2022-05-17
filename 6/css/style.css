@@ -878,7 +878,7 @@
 }
 @media (min-width: 1200px) {
   .reviews__wrapper {
-    background-image: url("../../img/index/quotes.svg");
+    background-image: url("../img/index/quotes.svg");
     background-repeat: no-repeat;
     background-position: center 72px;
     padding-top: 193px;
