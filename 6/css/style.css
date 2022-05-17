@@ -108,12 +108,14 @@
   box-shadow: 0 1px 0 0 #000000;
   background-image: url("../img/header/background-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: top;
+  background-size: cover;
 }
 .page-header--index {
-  background-image: url("../img/header/phone-hand.png"), url("../img/header/phone-screen.jpg"), url("../img/header/background-mobile.jpg");
+  background-image: url("../img/header/phone-mobile.png"), url("../img/header/background-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: left 176px, center 209px, top;
+  background-position: left 176px, top;
+  background-size: auto auto;
 }
 
 .page-header__title-wrapper {
@@ -145,19 +147,26 @@
 
 @media (min-width: 660px) {
   .page-header {
-    background-image: none;
+    background-image: url("../img/header/background-tablet.jpg");
+    background-position: top;
+    background-size: auto;
+  }
+  .page-header--index {
+    background-image: url("../img/header/phone-tablet.png"), url("../img/header/background-tablet.jpg");
+    background-position: bottom, top;
+    background-size: auto, cover;
   }
 
   .page-header__title-wrapper {
-    padding-top: 57px;
-    min-height: 249px;
+    padding-top: 65px;
   }
   .page-header__title-wrapper--index {
     width: 200px;
     padding-top: 92px;
     padding-right: 50px;
-    padding-bottom: 29px;
+    padding-bottom: 27px;
     padding-left: 70px;
+    min-height: 150px;
   }
 
   .page-header__title {
@@ -172,12 +181,22 @@
   .page-header__apps {
     padding: 0;
     padding-left: 20px;
-    padding-bottom: 116px;
+    padding-bottom: 113px;
     width: 300px;
-    min-height: 235px;
   }
 }
 @media (min-width: 1200px) {
+  .page-header {
+    background-image: url("../img/header/background-desktop.jpg");
+    background-position: top;
+    background-size: auto;
+  }
+  .page-header--index {
+    background-image: url("../img/header/phone-desktop.png"), url("../img/header/background-desktop.jpg");
+    background-position: 150px bottom, top;
+    background-size: auto, auto;
+  }
+
   .page-header__nav-wrapper {
     background-color: rgba(0, 0, 0, 0.3);
     padding-right: 130px;
@@ -188,20 +207,15 @@
     padding-top: 50px;
     padding-right: 130px;
     padding-left: 130px;
-    min-height: 234px;
   }
   .page-header__title-wrapper--index {
     width: 300px;
-    padding-top: 104px;
+    padding-top: 98px;
     padding-right: 0;
-    padding-bottom: 41px;
+    padding-bottom: 36px;
     padding-left: 130px;
   }
 
-  .page-header__title {
-    font-size: 50px;
-    line-height: 68px;
-  }
   .page-header__title--index {
     font-size: 50px;
     line-height: 68px;
@@ -211,7 +225,6 @@
     padding: 0;
     padding-left: 130px;
     padding-bottom: 124px;
-    min-height: 280px;
   }
 }
 .main-nav {
@@ -502,7 +515,7 @@
 .apps__list {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   margin: 0;
   padding: 0;
   padding-left: 18px;
@@ -519,6 +532,7 @@
   .apps__content {
     padding: 0;
     align-items: center;
+    min-height: 238px;
   }
 
   .apps__button {
@@ -529,12 +543,9 @@
   }
 
   .apps__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
     width: 204px;
-    margin: 0;
     padding: 0;
+    padding-top: 15px;
   }
 
   .apps__description {
@@ -542,40 +553,51 @@
   }
 }
 @media (min-width: 1200px) {
+  .apps__content {
+    min-height: 280px;
+  }
+
   .apps__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    width: 204px;
-    margin: 0;
-    padding: 0;
+    padding-top: 25px;
   }
 
   .apps__description {
     font-size: 18px;
   }
 }
-.benefits {
-  color: #283645;
-  background-image: url("../img/index/benefits-screen-smile.png"), url("../img/index/benefits-phone.png"), url("../img/index/benefits-background.svg");
-  background-repeat: no-repeat;
-  background-position: center 762px, center 725px, center bottom;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .benefits__wrapper {
   display: flex;
   min-height: 701px;
-  padding-top: 85px;
+  position: relative;
+  background-color: #f2f2f2;
+}
+.benefits__wrapper::before {
+  content: "";
+  height: 32px;
+  width: 100%;
+  position: absolute;
+  top: -1px;
+  left: 0;
+  background-color: #ffffff;
+  -webkit-clip-path: polygon(100% 0, 0 0, 0 100%);
+          clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+
+.benefits__background-wrapper {
+  background-image: url("../img/index/benefits-screen-mobile.png"), url("../img/index/benefits-phone-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center 545px, center 508px;
+  width: 100%;
 }
 
 .benefits__list {
-  margin: 0;
-  padding: 0;
+  padding-top: 81px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 318px;
 }
 
-.benefits__item {
+.benefits__item:not(:last-child) {
   padding-bottom: 30px;
 }
 
@@ -594,18 +616,27 @@
 }
 
 @media (min-width: 660px) {
-  .benefits {
-    background-image: none;
-    background-color: #f2f2f2;
-  }
-
   .benefits__wrapper {
     min-height: 388px;
-    padding-top: 99px;
-    padding-left: 310px;
+  }
+  .benefits__wrapper::before {
+    height: 53px;
   }
 
-  .benefits__item {
+  .benefits__background-wrapper {
+    z-index: 1;
+    background-image: url("../img/index/benefits-screen-tablet.png"), url("../img/index/benefits-phone-tablet.png");
+    background-repeat: no-repeat;
+    background-position: 35px 67px, 20px 6px;
+  }
+
+  .benefits__list {
+    padding-top: 76px;
+    padding-left: 330px;
+    padding-bottom: 42px;
+  }
+
+  .benefits__item:not(:last-child) {
     padding-bottom: 33px;
   }
 
@@ -618,28 +649,35 @@
   }
 }
 @media (min-width: 1200px) {
-  .benefits {
-    padding-left: 130px;
-    padding-right: 130px;
-    padding-bottom: 50px;
+  .benefits__wrapper::before {
+    height: 100px;
   }
 
-  .benefits__wrapper {
-    min-height: 196px;
-    padding-top: 99px;
-    padding-left: 0;
+  .benefits__background-wrapper {
+    display: flex;
+    align-items: flex-end;
+    min-height: 309px;
+    padding-top: 307px;
+    background-image: url("../img/index/benefits-greymobile-desktop.png"), url("../img/index/benefits-pinkmobile-desktop.png"), url("../img/index/benefits-smilemobile-desktop.png");
+    background-repeat: no-repeat;
+    background-position: 130px 6px, 450px 6px, 770px 6px;
   }
 
   .benefits__list {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    padding-top: 51px;
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-bottom: 51px;
+    background-color: #f2f2f2;
   }
 
   .benefits__item {
     width: 242px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 29px;
+    padding-right: 29px;
     padding-bottom: 0;
   }
 
@@ -687,7 +725,7 @@
 @media (min-width: 1200px) {
   .benefits-intro {
     padding-top: 53px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
     min-height: 214px;
   }
 
@@ -711,7 +749,7 @@
     padding-left: 310px;
     padding-top: 102px;
     padding-bottom: 24px;
-    background-image: url("../../img/index/timer.svg");
+    background-image: url("../img/index/timer.svg");
     background-repeat: no-repeat;
     background-position: 0 54px;
   }
@@ -750,9 +788,11 @@
 
   .effectiveness__wrapper {
     padding-left: 370px;
-    padding-top: 102px;
+    padding-top: 106px;
     padding-bottom: 114px;
-    background-image: none;
+    background-image: url("../img/index/timer-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 0 17px;
   }
 
   .effectiveness__title {
@@ -838,6 +878,9 @@
 }
 @media (min-width: 1200px) {
   .reviews__wrapper {
+    background-image: url("../../img/index/quotes.svg");
+    background-repeat: no-repeat;
+    background-position: center 72px;
     padding-top: 193px;
     padding-left: 256px;
     padding-right: 256px;
@@ -854,10 +897,21 @@
   }
 }
 .rates {
-  background-image: url("../img/index/rates-background.svg");
-  background-repeat: no-repeat;
+  position: relative;
+  background-color: #f2f2f2;
   min-height: 480px;
   overflow: hidden;
+}
+.rates::before {
+  content: "";
+  height: 32px;
+  width: 100%;
+  position: absolute;
+  top: -1px;
+  left: 0;
+  background-color: #ffffff;
+  -webkit-clip-path: polygon(100% 0, 0 0, 0 100%);
+          clip-path: polygon(100% 0, 0 0, 0 100%);
 }
 
 .rates__wrapper {
@@ -879,6 +933,9 @@
     padding-right: 20px;
     background-image: none;
     background-color: #f2f2f2;
+  }
+  .rates::before {
+    height: 40px;
   }
 
   .rates__wrapper {
@@ -902,6 +959,9 @@
     min-height: 535px;
     padding-left: 130px;
     padding-right: 130px;
+  }
+  .rates::before {
+    height: 101px;
   }
 
   .rates__wrapper {
@@ -1141,7 +1201,20 @@
 }
 
 .contacts__map-wrapper {
+  position: relative;
   height: 200px;
+}
+.contacts__map-wrapper::before {
+  background-color: #ffffff;
+  content: "";
+  width: 100%;
+  height: 33px;
+  position: absolute;
+  z-index: 1;
+  top: -1px;
+  left: 0;
+  -webkit-clip-path: polygon(100% 0, 50% 100%, 0 0);
+          clip-path: polygon(100% 0, 50% 100%, 0 0);
 }
 
 .contacts__map {
@@ -1166,6 +1239,9 @@
 
   .contacts__map-wrapper {
     height: 374px;
+  }
+  .contacts__map-wrapper::before {
+    height: 68px;
   }
 
   .contacts__map {
@@ -1199,6 +1275,9 @@
 
   .contacts__map-wrapper {
     height: 503px;
+  }
+  .contacts__map-wrapper::before {
+    height: 104px;
   }
 
   .contacts__map {
