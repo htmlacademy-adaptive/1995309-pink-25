@@ -13,7 +13,6 @@
     left: 0;
     background-color: #ffffff;
     clip-path: polygon(100% 0, 0 0, 0 100%);
-    -webkit-clip-path: polygon(100% 0, 0 0, 0 100%);
   }
 }
 
@@ -37,7 +36,7 @@
     background-image: none;
     background-color: $lightgrey;
 
-    &:before {
+    &::before {
       height: 2172px - 2132px;
     }
   }
@@ -65,7 +64,7 @@
     padding-left: 130px;
     padding-right: 130px;
 
-    &:before {
+    &::before {
       height: 2721px - 2620px;
     }
   }
