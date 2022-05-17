@@ -55,9 +55,11 @@
 
   .effectiveness__wrapper {
     padding-left: 500px - 130px;
-    padding-top: 102px;
+    padding-top: 106px;
     padding-bottom: 120px - 6px;
-    background-image: none;
+    background-image: url("../img/index/timer-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 0 17px;
   }
 
   .effectiveness__title {

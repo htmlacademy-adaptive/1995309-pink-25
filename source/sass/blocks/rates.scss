@@ -1,8 +1,20 @@
 .rates {
-  background-image: url("../img/index/rates-background.svg");
-  background-repeat: no-repeat;
+  position: relative;
+  background-color: $lightgrey;
   min-height: 480px;
   overflow: hidden;
+
+  &::before {
+    content: "";
+    height: 32px;
+    width: 100%;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    background-color: #ffffff;
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+    -webkit-clip-path: polygon(100% 0, 0 0, 0 100%);
+  }
 }
 
 .rates__wrapper {
@@ -24,6 +36,10 @@
     padding-right: 20px;
     background-image: none;
     background-color: $lightgrey;
+
+    &:before {
+      height: 2172px - 2132px;
+    }
   }
 
   .rates__wrapper {
@@ -48,6 +64,10 @@
     min-height: 3155px - 2620px;
     padding-left: 130px;
     padding-right: 130px;
+
+    &:before {
+      height: 2721px - 2620px;
+    }
   }
 
   .rates__wrapper {
