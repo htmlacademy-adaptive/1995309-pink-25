@@ -57,14 +57,13 @@
     padding: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
-    min-height: auto;
-    height: 155px;
+    min-height: 155px;
     justify-content: space-between;
 
     &--win {
       flex-direction: row;
       flex-wrap: wrap;
-      height: 121px;
+      min-height: 121px;
     }
   }
 
@@ -103,7 +102,7 @@
 
     &--win {
       align-content: center;
-      height: 96px;
+      min-height: 96px;
       padding: 20px 30px 20px 27px;
     }
   }

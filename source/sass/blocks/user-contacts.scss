@@ -15,7 +15,7 @@
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   line-height: 30px;
-  height: 59px;
+  min-height: 59px;
 
   &::-webkit-input-placeholder {
     color: $darkgrey;

@@ -65,6 +65,9 @@
 
 @media (min-width: $desktop-width) {
   .reviews__wrapper {
+    background-image: url("../img/index/quotes.svg");
+    background-repeat: no-repeat;
+    background-position: center 72px;
     padding-top: 193px;
     padding-left: 256px;
     padding-right: 256px;

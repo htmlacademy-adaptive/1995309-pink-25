@@ -1,0 +1,26 @@
+@media (min-width: $desktop-width) {
+  .nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-list__item a {
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #ffffff;
+    padding-right: 10px;
+
+    &:hover {
+      color: $pink;
+    }
+
+    &:active {
+      color: #ffffff;
+      opacity: 0.3;
+    }
+  }
+}

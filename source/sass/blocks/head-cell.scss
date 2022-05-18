@@ -1,6 +1,10 @@
 .head-cell {
+  background-color: $darkgrey;
+  color: #ffffff;
+  border-right: 2px #f2f2f2 solid;
+  box-sizing: border-box;
   text-align: center;
-  padding: 4px 95px 20px 95px;
+  word-wrap: break-word;
 }
 
 .head-cell__rate {
