@@ -5,6 +5,34 @@
   box-sizing: border-box;
   text-align: center;
   word-wrap: break-word;
+
+  &--hit {
+    position: relative;
+
+    &::before {
+      background-color: $pink;
+      content: "";
+      width: 74px;
+      height: 74px;
+      position: absolute;
+      top: 0;
+      left: -2px;
+      clip-path: polygon(55% 0, 100% 0, 0 100%, 0 55%);
+    }
+
+    &::after {
+      content: "ХИТ";
+      color: #ffffff;
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 30px;
+      font-weight: 400;
+      transform: rotate(-45deg);
+      position: absolute;
+      top: 15px;
+      left: 13px;
+    }
+  }
 }
 
 .head-cell__rate {
@@ -23,13 +51,42 @@
 
 @media (min-width: $tablet-width) {
   .head-cell {
-    padding: 4px 33px 4px 33px;
+    padding: 12px 33px 8px 33px;
+
+    &--hit {
+      &::before {
+        width: 60px;
+        height: 60px;
+        top: 0;
+        left: 0;
+      }
+
+      &::after {
+        top: 10px;
+        left: 8px;
+      }
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .head-cell {
     padding: 9px 66px 9px 66px;
+
+    &--hit {
+      &::before {
+        width: 74px;
+        height: 74px;
+        top: 0;
+        left: 0;
+        clip-path: polygon(57% 0, 100% 0, 0 100%, 0 57%);
+      }
+
+      &::after {
+        top: 15px;
+        left: 15px;
+      }
+    }
   }
 
   .head-cell__rate {

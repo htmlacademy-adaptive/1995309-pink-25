@@ -1,3 +1,26 @@
+.photo {
+  &--win {
+    position: relative;
+
+    &::before {
+      display: block;
+      content: "ПАНОРАМА ДНЯ";
+      text-transform: uppercase;
+      color: #ffffff;
+      font-size: 12px;
+      line-height: 24px;
+      font-weight: 700;
+      background-color: $pink;
+      padding: 5px 20px 7px 19px;
+      width: 140px - 39px;
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      right: 20px;
+    }
+  }
+}
+
 .photo__content-container {
   padding-left: 20px;
   padding-right: 20px;
@@ -11,6 +34,10 @@
   width: 100%;
   padding: 17px;
   min-height: 121px;
+
+  &--win {
+    padding-right: 0;
+  }
 }
 
 .photo__image {
@@ -53,6 +80,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .photo {
+    &--win {
+      &::before {
+        top: 57px;
+      }
+    }
+  }
+
   .photo__content {
     padding: 30px;
     padding-top: 20px;
@@ -92,6 +127,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .photo {
+    &--win {
+      &::before {
+        top: 54px;
+        right: 130px;
+      }
+    }
+  }
+
   .photo__content-container {
     padding-left: 130px;
     padding-right: 130px;
@@ -105,5 +149,10 @@
       min-height: 96px;
       padding: 20px 30px 20px 27px;
     }
+  }
+
+  .photo__like-button {
+    height: 24px;
+    padding-top: 4px;
   }
 }

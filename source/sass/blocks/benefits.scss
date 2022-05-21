@@ -17,9 +17,9 @@
 }
 
 .benefits__background-wrapper {
-  background-image: url("../img/index/benefits-screen-mobile.png"), url("../img/index/benefits-phone-mobile.png");
+  background-image: url("../img/index/benefits-phone-mobile.png");
   background-repeat: no-repeat;
-  background-position: center 545px, center 508px;
+  background-position: center 508px;
   width: 100%;
 }
 
@@ -61,9 +61,9 @@
 
   .benefits__background-wrapper {
     z-index: 1;
-    background-image: url("../img/index/benefits-screen-tablet.png"), url("../img/index/benefits-phone-tablet.png");
+    background-image: url("../img/index/benefits-phone-tablet.png");
     background-repeat: no-repeat;
-    background-position: 35px 67px, 20px 6px;
+    background-position: 20px 6px;
   }
 
   .benefits__list {
